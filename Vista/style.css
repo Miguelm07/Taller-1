@@ -1,0 +1,350 @@
+
+
+header{
+
+background: blue;
+padding: 30px;
+border-radius: 5px;
+color: white;
+width: 100%;
+max-width: 1000px;
+margin: auto;
+}
+
+body{
+padding-top: 10px;
+width: 100%;
+max-width: 1200px;
+max-height: 600px;
+border: 1px solid black;
+margin: auto;
+
+
+}
+
+.encabezado{
+
+float: left;
+}
+
+.encabezado{
+
+float: right;
+}
+
+#logo{
+
+height: 80px;
+width: 80px;
+
+
+}
+
+
+.nav{
+
+color: white;
+list-style: none;
+}
+
+.nav li{
+
+float: left;
+padding-left: 10px;
+padding-right: 10px;
+border-left: 1px solid black;
+cursor: pointer;
+
+}
+
+.nav li:hover{
+float: left;
+padding-left: 10px;
+padding-right: 10px;
+border-left: 1px solid black;
+cursor: pointer;
+color: yellow;
+font-size: 110%
+
+
+}
+
+.aa_h2{
+  font:100 5rem/1 Roboto;
+  text-transform: uppercase;
+  size: 5%;
+  font-size: 200%;
+}
+table{
+   background: #fff;
+}
+table,thead,tbody,tfoot,tr, td,th{
+  text-align: center;
+  margin: auto;
+  border:1px solid #dedede;
+  padding: 1rem;
+  width: 50%;
+}
+.table    { display: table; width: 50%; }
+.tr       { display: table-row;  }
+.thead    { display: table-header-group }
+.tbody    { display: table-row-group }
+.tfoot    { display: table-footer-group }
+.col      { display: table-column }
+.colgroup { display: table-column-group }
+.td, .th   { display: table-cell; width: 50%; }
+.caption  { display: table-caption }
+
+.table,
+.thead,
+.tbody,
+.tfoot,
+.tr,
+.td,
+.th{
+  text-align: center;
+  margin: auto;
+  padding: 1rem;
+}
+.table{
+  background: #fff;
+  margin: auto;
+  border:none;
+  padding: 0;
+  margin-bottom: 5rem;
+}
+
+.th{
+  font-weight: 700;
+  border:1px solid #dedede;
+  &:nth-child(odd){
+    border-right:none;
+  }
+}
+.td{
+  font-weight: 300;
+  border:1px solid #dedede;
+  border-top:none;
+  &:nth-child(odd){
+    border-right:none;
+  }
+}
+
+.aa_htmlTable{
+ 
+
+  display: table;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
+  max-width: 1000px;
+  margin: auto;
+}
+.aa_css{
+  background: skyblue;
+  padding: 5rem;
+  display: table;
+  width: 100%;
+  height: 100vh;
+  vertical-align: middle;
+}
+
+.aa_ahmadawais{
+  display: table;
+  width: 100%;
+  font: 100 1.2rem/2 Roboto;
+  margin: 5rem auto;
+}
+
+.show{
+
+
+  cursor: pointer;
+  
+  &:hover{
+    background: #c0392b;
+  }
+  
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+
+
+.close{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+
+
+.mask{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  
+  opacity: 0;
+  
+  transition: 0.7s;
+}
+
+
+
+.modal{
+  position: fixed;
+  top: 30%;
+  left: 45%;
+  width: 600px;
+  height: 500px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: white;
+  z-index: 100;
+  visibility: hidden;
+  border: 2px solid blue;
+  opacity: 0;
+  
+  transition: 0.5s ease-out;
+  
+  transform: translateY(45px);
+}
+
+
+
+.active{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.active + .modal{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+.show2{
+
+  
+  &:hover{
+    background: #c0392b;
+  }
+  
+  &:active{
+    transform: scale(0.9);
+  }
+}
+
+
+
+.close2{
+  position: absolute;
+  top: 0;
+  right: 0;
+  width: 35px;
+  height: 30px;
+  background: #000;
+  color: #fff;
+  cursor: pointer;
+  border: 0;
+}
+
+
+
+.mask2{
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%;
+  background: rgba(52, 73, 94, 0.8);
+  z-index: 50;
+  visibility: hidden;
+  
+  opacity: 0;
+  
+  transition: 0.7s;
+}
+
+
+
+.modal2{
+  position: fixed;
+  top: 50%;
+  left: 50%;
+  width: 400px;
+  height: 300px;
+  margin-left: -200px;
+  margin-top: -150px;
+  background: white;
+  z-index: 100;
+  visibility: hidden;
+  border: 2px solid blue;
+  opacity: 0;
+  
+  transition: 0.5s ease-out;
+  
+  transform: translateY(45px);
+}
+
+
+
+.active2{
+  visibility: visible;
+  opacity: 1;
+}
+
+
+
+.active2 + .modal2{
+  visibility: visible;
+  opacity: 1;
+  transform: translateY(0);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+.btn-enlace {
+  position: relative;
+  padding: 6px 16px;
+  border-radius: 0.25rem;
+  background-color: #28a745;
+  color: #fff;
+  transition: background-color 0.15s ease-in-out, top 0.15s ease-in-out,
+    left 0.15s ease-in-out;
+}
+
+.btn-enlace:hover,
+.btn-enlace:focus {
+  background-color: #218838;
+}
+
+.btn-enlace:active {
+  top: 2px;
+  left: 2px;
+}
